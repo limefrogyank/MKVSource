@@ -1,0 +1,12 @@
+
+Broken:
+- parse the SPS and PPS from MKV CodecPrivate data
+- parse actual height/width/fps etc from stream... OR try to eliminate from stream setup... maybe not necessary.
+- do a check to make sure start codes need to be added (check if H264, check if x00x00x00x01 already there)
+- speaker setup for AC-3
+
+
+To Add:
+- seeking
+- parsing other video/audio codecs besides H264 & AC3
+- parsing subtitles!

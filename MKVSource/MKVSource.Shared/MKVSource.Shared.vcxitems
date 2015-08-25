@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Globals">
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <ItemsProjectGuid>{0de1d3ab-e7e1-4fe9-979d-e71376f4d7d3}</ItemsProjectGuid>
+    <ItemsRootNamespace>MKV</ItemsRootNamespace>
+    <ItemsProjectName>MKVSource.Shared</ItemsProjectName>
+    <CodeSharingProject>248F659F-DAC5-46E8-AC09-60EC9FC95053</CodeSharingProject>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(MSBuildThisFileDirectory)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)CaptionStream.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)MKVByteStreamHandler.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)MKVSource.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)MKVStream.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Parse.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)pch.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)CaptionStream.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)MKVByteStreamHandler.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)MKVSource.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)MKVStream.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Parse.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)pch.cpp">
+      <PrecompiledHeader>Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectCapability Include="SourceItemsFromImports" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="$(MSBuildThisFileDirectory)Things To Do.txt" />
+  </ItemGroup>
+</Project>
